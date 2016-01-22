@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <drawable name="text_transparent">#00000000</drawable>
+    <drawable name="text_transparent01">#dbdad5</drawable>
+    <drawable name="all_white_bg_drawable">#F3F3F3</drawable>
+
+    <color name="chat_re_img_bg">#F0F0F0</color>
+    <color name="chat_re_img_p">#DEDEDE</color>
+    <color name="search_friend">#ededee</color>
+    <color name="clock_axis">#afafaf</color>
+    <color name="text_color_chat">#b5b5b5</color>
+    <color name="text_color_s">#157efb</color>
+    <color name="text_color_s1">#54a2e4</color>
+    <color name="text_color_sg">#a6a5a1</color>
+    <color name="text_color_w">#ffffff</color>
+    <color name="text_color_g">#888b8c</color>
+    <color name="text_color_b">#403f3e</color>
+    <color name="text_color_new_man">#157EFB</color>
+    <color name="text_color_new_woman">#FE4242</color>
+    <color name="text_color_h">#ededee</color>
+    <color name="text_color_y">#2272cd</color>
+    <color name="text_color_b1">#403f30</color>
+    <color name="text_login_hint">#c8c8c8</color>
+    <color name="title_bar">#f6f5f1</color>
+    <color name="title_color">#f8f8f8</color>
+    <color name="main">#174d93</color>
+    <color name="gr_bg_color">#e6e6e6</color>
+    <color name="fri_color">#9a3430</color>
+    <color name="host_edit_de">#EDEDEF</color>
+    <color name="calendar_train_bg_color">#ededee</color>
+    <color name="host_edit_fr">#BABAB4</color>
+    <color name="find_text_color">#7da7f6</color>
+    <!-- <color name="black_text">#444444</color> -->
+    <color name="light_gray_text">#888888</color>
+    <!-- <color name="register_gray">#8b8b8b</color> -->
+    <!-- <color name="green">#006400</color> -->
+    <color name="red">#FF0000</color>
+    <!-- <color name="cover_track">#7fffffff</color> -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!-- <color name="trans_bg">#50000000</color> -->
+    <!-- <color name="med_gray">#ff999999</color> -->
+    <color name="textcolor_blue">#00a6e2</color>
+    <!-- <color name="wel_page_txt_color">#0373a2</color> -->
+    <!-- 我的通讯录 好友签名背景色 -->
+    <!-- <color name="signature_bgcolor">#e7e7e7</color> -->
+    <!-- 导航栏背景色 -->
+    <!-- <color name="nav_bgcolor">#196b90</color> -->
+    <!-- 和聊天有关的 -->
+    <color name="navpage">#ffd1d1d1</color>
+    <!-- <color name="lightransparent">#a0000000</color> -->
+    <color name="lightgrey">#ff888888</color>
+    <!-- 亮灰色 -->
+    <!-- <color name="ConversationVoiceTextColor">#ff339900</color> -->
+    <!-- 留言详情的背景色 -->
+    <!-- 透明 -->
+
+
+    <!-- ×的黑色 -->
+    <color name="black_cha">#3F3F3F</color>
+    <!-- 透明的颜色 -->
+    <color name="sportq_trans">#80000000</color>
+    <!-- 浅透明的颜色 -->
+    <color name="sportq_trans4">#40000000</color>
+    <color name="sportq_joining">#60000000</color>
+    <color name="sportq_joiningclick">#90000000</color>
+    <!-- 一般字体的颜色 -->
+    <color name="text_color_normal">#666666</color>
+
+    <!-- title背景的颜色 -->
+    <color name="title_bg">#F5F4ED</color>
+    <!-- 邀请好友title背景的颜色 -->
+    <color name="invite">#BFBEBC</color>
+
+    <!-- 主页投影的颜色 -->
+    <color name="main_default_shadow">#ffffff</color>
+
+    <!-- 主页title的颜色 -->
+    <color name="register_hint_color">#b2b2b2</color>
+    <color name="female_textcolor">#ECA567</color>
+    <color name="not_read_msg_text_color">#EAA66A</color>
+    <color name="default_img_bg_color">#f5f4ed</color>
+    <color name="default_weichat">#72BD00</color>
+    <color name="default_qq">#2489D9</color>
+    <color name="default_weichatfri">#1EAF84</color>
+    <color name="default_qqzone">#E3B32D</color>
+    <color name="filter_bg">#1a1a1a</color>
+    <color name="on_click_color">#D9D9D9</color>
+    <color name="default_bg">#efeff4</color>
+    <color name="course_text">#ededed</color>
+    <color name="user_id">#ECA66B</color>
+    <color name="about_btn_press_color">#0062AE</color>
+    <color name="mainpage_sportnote_date">#F2F1EC</color>
+    <color name="mainpage_sportnote_date_click">#F8F8F8</color>
+    <color name="personal_priletter_bg">#C1E82D</color>
+    <color name="personal_priletter_bg01">#657A16</color>
+    <color name="status_bg">#4296F9</color>
+    <color name="gets_verification_code_bg">#B3B3B3</color>
+    <color name="upload_user_icon_hint_color">#0ba83b</color>
+    <color name="sex_textcolor">#F967b9</color>
+    <color name="vcode_invisible_color">#c6c6c6</color>
+    <color name="vcode_visible_color">#9a9a9a</color>
+    <color name="ranking_color3">#63ce2f</color>
+    <color name="ranking_color2">#facc1f</color>
+    <color name="ranking_color">#f13f3f</color>
+    <color name="ranking_item_bg">#9fffffff</color>
+    <color name="text_sg">#c3c5c5</color>
+    <color name="chating_sport_card">#FA951F</color>
+    <color name="chating_sport_card_click">#c87819</color>
+    <color name="chating_sport_card_yue">#FEEDDD</color>
+    <color name="chating_sport_card_zi">#4498FB</color>
+    <color name="chating_sport_card_pai">#E3E3E3</color>
+    <color name="chating_sport_card_pai_line">#FCB563</color>
+    <!-- 运动记录背景色 -->
+    <color name="B001">#FF9C33</color>
+    <color name="B002">#73BD00</color>
+    <color name="B003">#ACD106</color>
+    <color name="B004">#4DB5E3</color>
+    <color name="B005">#E3B729</color>
+    <color name="B006">#FF534A</color>
+    <color name="B007">#697194</color>
+    <color name="B008">#FFB92E</color>
+    <color name="B010">#5CB8A1</color>
+    <color name="B011">#F6951E</color>
+    <color name="B012">#39B85D</color>
+    <color name="B013">#8FA2BF</color>
+    <color name="B014">#FF7F30</color>
+    <color name="B015">#43C4DE</color>
+    <color name="B016">#5CBF78</color>
+    <color name="B017">#44AAC7</color>
+    <color name="B018">#AB8B47</color>
+    <color name="B019">#61AF3D</color>
+    <color name="B020">#6D93C2</color>
+    <color name="B021">#C2AB00</color>
+    <color name="B022">#43B56B</color>
+    <color name="B023">#64A5DE</color>
+    <color name="B024">#3884C7</color>
+    <color name="B025">#8F8FFF</color>
+    <color name="B026">#FF779A</color>
+    <color name="B027">#7DBF3C</color>
+    <color name="B028">#478CCC</color>
+    <color name="B029">#D6B515</color>
+    <color name="B030">#E36BA7</color>
+    <color name="B031">#FF6C24</color>
+    <color name="B032">#E69500</color>
+    <color name="B033">#C084D9</color>
+    <color name="B034">#4F6885</color>
+    <color name="B035">#5CBF78</color>
+    <color name="B036">#4688C9</color>
+    <color name="B037">#2DA4D4</color>
+    <color name="B039">#5E85EB</color>
+    <color name="B040">#66A4E8</color>
+    <color name="B041">#3A87EB</color>
+    <color name="B042">#96A670</color>
+    <color name="B043">#DBA027</color>
+    <color name="B044">#7A694B</color>
+    <color name="B045">#5CBF78</color>
+    <color name="B046">#5CBF78</color>
+    <color name="B047">#C27C69</color>
+    <color name="B048">#0FB883</color>
+    <color name="B049">#E3B729</color>
+    <color name="B051">#FF635C</color>
+    <color name="B052">#37C2DB</color>
+    <color name="B053">#99B315</color>
+    <color name="B054">#6EB043</color>
+    <color name="B055">#ACAEAD</color>
+    <color name="B058">#B7C8DD</color>
+    <color name="B059">#878B8C</color>
+    <color name="green">#7ED320</color>
+    <color name="cervix_shape_line">#EDEDEF</color>
+    <color name="cervix_report_bmi">#FCBC2C</color>
+    <color name="cervix_userinfo_topbg_nv">#FF9619</color>
+    <color name="cervix_userinfo_topbg_nan">#2B8BFC</color>
+    <color name="text_color_s2">#133e73</color>
+    <color name="text_color_s3">#3B6699</color>
+    <color name="page_index_color">#B8C9DD</color>
+    <color name="course_bg_color">#FF8900</color>
+    <color name="yellow">#FF8901</color>
+    <color name="calendar_train_bg">#D7B515</color>
+    <color name="course_wrong_bg">#F6F6F6</color>
+    <color name="topic_color">#4F4F4F</color>
+    <color name="lightblue">#5BA5FD</color>
+    <color name="train_join_plan_screen_title">#F9F9F9</color>
+
+    <color name="gudong">#6ADC44</color>
+    <color name="runkeeper">#26B7FA</color>
+    <color name="strava">#FF5000</color>
+    <color name="nearby_female_age">#FA64B7</color>
+</resources>

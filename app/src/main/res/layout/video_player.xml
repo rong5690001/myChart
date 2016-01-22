@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/video_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <!--视频暂停时用来显示截屏的图片-->
+    <ImageView
+        android:id="@+id/pause_image"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 视频长度显示 -->
+
+    <TextView
+        android:id="@+id/train_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/video_view_layout"
+        android:layout_alignParentRight="true"
+        android:padding="10.0dip"
+        android:textColor="@color/white"
+        android:text="this is test"
+        android:textSize="35.0sp" />
+
+    <!-- 计时 -->
+
+    <TextView
+        android:id="@+id/single_act_time"
+        style="@style/textstyle_w15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/video_view_layout"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="70.0dip"
+        android:paddingLeft="10.0dip"
+        android:text="this is test"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/all_act_time"
+        style="@style/textstyle_w15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/video_view_layout"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="70.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:text="this is test"
+        android:visibility="visible" />
+
+    <!-- 黑色地板 -->
+
+
+    <!-- android:clickable="true" -->
+    <!-- android:focusable="true" -->
+    <!-- android:focusableInTouchMode="true" -->
+
+    <FrameLayout
+        android:id="@+id/black_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#403F3D"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/next_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="40.0dip"
+            android:textColor="@color/white"
+            android:text="this is test"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/reset_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="40.0dip"
+            android:text="this is test"
+            android:textColor="@color/white"
+            android:textSize="60.0sp" />
+
+        <TextView
+            android:id="@+id/countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="this is test"
+            android:textColor="@color/white"
+            android:textSize="60.0sp" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/operate_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 放大按钮 -->
+
+    <ImageView
+        android:id="@+id/full_screen_icon"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_alignBottom="@+id/video_view_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10.0dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/full_screen" />
+    <!-- 关闭按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/close_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginBottom="8.0dip"
+        android:padding="12.4dip" >
+
+        <ImageView
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/watermark_close_icon" />
+    </RelativeLayout>
+
+    <!-- 中间暂停按钮 -->
+
+    <ImageView
+        android:id="@+id/pause_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/video_pause_btn" />
+
+
+</RelativeLayout>
