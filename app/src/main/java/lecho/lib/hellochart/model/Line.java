@@ -37,7 +37,7 @@ public class Line {
     private ValueShape shape = ValueShape.CIRCLE;
     private PathEffect pathEffect;
     private LineChartValueFormatter formatter = new SimpleLineChartValueFormatter();
-    private List<PointValue> values = new ArrayList<PointValue>();
+    private List<PointValue> values = new ArrayList();
 
     public Line() {
 

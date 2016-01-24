@@ -15,6 +15,7 @@ import android.text.TextUtils;
 import lecho.lib.hellochart.computator.ChartComputator;
 import lecho.lib.hellochart.model.Axis;
 import lecho.lib.hellochart.model.AxisValue;
+import lecho.lib.hellochart.model.SelectedValue;
 import lecho.lib.hellochart.model.Viewport;
 import lecho.lib.hellochart.util.AxisAutoValues;
 import lecho.lib.hellochart.util.ChartUtils;
@@ -28,6 +29,8 @@ public class AxesRenderer {
     private static final int DEFAULT_AXIS_MARGIN_DP = 2;
     //坐标线的偏移量
     private static final int DEFAULT_OFFSET_LINES = 0;
+    //默认一个字符占的宽度
+    private static final float DEFAULT_CHART_SIZE = 15F;
 
     /**
      * Axis positions indexes, used for indexing tabs that holds axes parameters, see below.
@@ -54,6 +57,9 @@ public class AxesRenderer {
 
     //坐标线的偏移量
     private int offsetLines = DEFAULT_OFFSET_LINES;
+
+    //一个字符占的宽度
+    private float chart_size = DEFAULT_CHART_SIZE;
     private float density;
     private float scaledDensity;
     private Paint[] labelPaintTab = new Paint[]{new Paint(), new Paint(), new Paint(), new Paint()};
@@ -138,6 +144,14 @@ public class AxesRenderer {
         initAxis(chart.getChartData().getAxisXBottom(), BOTTOM);
         initAxis(chart.getChartData().getAxisYLeft(), LEFT);
         initAxis(chart.getChartData().getAxisYRight(), RIGHT);
+    }
+
+    public float getChart_size() {
+        return chart_size;
+    }
+
+    public void setChart_size(float chart_size) {
+        this.chart_size = chart_size;
     }
 
     public int getOffsetLines() {
@@ -639,7 +653,6 @@ public class AxesRenderer {
                         labelPaintTab[position]);
                 canvas.restore();
             } else {
-                System.out.println("labelBuffer:" + labelBuffer);
                 Paint paint = new Paint(labelPaintTab[position]);
                 paint.setColor(Color.RED);
                 canvas.drawLine(labelX -10, labelY, labelX -10, labelY, paint);
@@ -647,18 +660,15 @@ public class AxesRenderer {
                         labelPaintTab[position]);
             }
 
-            if(valueToDrawIndex == DEFAULT_OFFSET_LINES) {
-                PathEffect pathEffect = new DashPathEffect(new float[]{5,5,5,5}, 1);
-                Paint paint = new Paint(linePaintTab[position]);
-                paint.setStyle(Paint.Style.STROKE);
-                paint.setStrokeWidth(1);
-                paint.setPathEffect(pathEffect);
-                canvas.drawLine(linesDrawBufferTab[position][valueToDrawIndex * 4 + 0]
-                        , linesDrawBufferTab[position][valueToDrawIndex * 4 + 1]
-                        , linesDrawBufferTab[position][valueToDrawIndex * 4 + 2]
-                        , linesDrawBufferTab[position][valueToDrawIndex * 4 + 3]
-                        , paint);
-            }
+//            if(!isAxisVertical){
+//                Paint paint = new Paint(linePaintTab[position]);
+//                paint.setColor(Color.RED);
+//                canvas.drawLine(linesDrawBufferTab[position][valueToDrawIndex * 4 + 0] - charsNumber * chart_size
+//                        , linesDrawBufferTab[position][valueToDrawIndex * 4 + 3]
+//                        , linesDrawBufferTab[position][valueToDrawIndex * 4 + 0] + charsNumber * chart_size
+//                        , linesDrawBufferTab[position][valueToDrawIndex * 4 + 3]
+//                        , paint);
+//            }
         }
 
         // Drawing axis name

@@ -187,7 +187,7 @@ public class LineChartActivity extends ActionBarActivity {
         private void generateValues() {
             for (int i = 0; i < maxNumberOfLines; ++i) {
                 for (int j = 0; j < numberOfPoints; ++j) {
-                    randomNumbersTab[i][j] = (float) Math.random() * 100f;
+                    randomNumbersTab[i][j] = (float) Math.random() * 5f;
                 }
             }
         }
@@ -214,9 +214,9 @@ public class LineChartActivity extends ActionBarActivity {
             // Reset viewport height range to (0,100)
             final Viewport v = new Viewport(chart.getMaximumViewport());
             v.bottom = 1;
-            v.top = 10;
+            v.top = 5;
             v.left = 1;
-            v.right = numberOfPoints - 6;
+            v.right = 5;
             chart.setMaximumViewport(v);
             chart.setCurrentViewport(v);
         }
@@ -258,8 +258,8 @@ public class LineChartActivity extends ActionBarActivity {
                 //禁止轴线
                 axisY.setHasSeparationLine(false);
                 List<AxisValue> axisValues = new ArrayList<>();
-                axisValues.add(new AxisValue(1));
-                axisValues.add(new AxisValue(2));
+                axisValues.add(new AxisValue(1, "10月29日-5日".toCharArray()));
+                axisValues.add(new AxisValue(2, "10月29日-5日".toCharArray()));
                 axisValues.add(new AxisValue(3));
                 axisValues.add(new AxisValue(4));
                 axisValues.add(new AxisValue(5));
